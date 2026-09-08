@@ -1,0 +1,12 @@
+{
+  "symbols": ["NIFTYBEES", "NEXT50IETF"],
+  "weekly_amounts": [2000, 1000],
+  "weekdays": [0, 1],
+  "monthly_budget": null,
+  "reserve_fraction": 0.2,
+  "dip_threshold": 0.05,
+  "deep_dip_threshold": 0.1,
+  "lookback_sessions": 60,
+  "cost_bps": 10,
+  "slippage_bps": 5
+}
