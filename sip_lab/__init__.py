@@ -1,1 +1,1 @@
-"""ETF SIP research tools. No live order execution."""
+"""Read-only Groww access and paper-only stock strategy research."""

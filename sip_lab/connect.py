@@ -74,9 +74,14 @@ def main():
     except (KeyboardInterrupt, EOFError):
         print('\nCancelled. No new snapshot saved.')
         return 1
+    except ValueError as exc:
+        # `authenticated_client` supplies only secret-free diagnostic messages.
+        print('Connection failed. ' + str(exc))
+        print('No new snapshot saved; any previous snapshot remains unchanged.')
+        return 1
     except Exception:
         # Never print SDK exception messages, which may contain authentication data.
-        print('Connection failed. Check API key, secret, daily approval and network access.')
+        print('Connection failed. Check API access and network connection.')
         print('No new snapshot saved; any previous snapshot remains unchanged.')
         return 1
     return 0

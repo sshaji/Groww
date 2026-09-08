@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 from unittest.mock import patch
-from sip_lab.auth import credentials, save_credentials
+from sip_lab.auth import authenticated_client, credentials, save_credentials
 
 
 class AuthTests(unittest.TestCase):
@@ -30,3 +30,14 @@ class AuthTests(unittest.TestCase):
             path = Path(d) / '.env'
             path.write_text('GROWW_API_KEY=$(echo never-execute)\n')
             self.assertEqual(credentials(path)['GROWW_API_KEY'], '$(echo never-execute)')
+
+    def test_auth_error_is_safe_and_actionable(self):
+        class Client:
+            @staticmethod
+            def get_access_token(**kwargs):
+                class GrowwAPIAuthorisationException(Exception):
+                    pass
+                raise GrowwAPIAuthorisationException('secret must not appear')
+        with patch.dict('sys.modules', {'growwapi': type('Module', (), {'GrowwAPI': Client})}):
+            with self.assertRaisesRegex(ValueError, 'approval is required'):
+                authenticated_client({'GROWW_API_KEY': 'key', 'GROWW_API_SECRET': 'secret'})

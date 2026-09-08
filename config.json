@@ -1,12 +1,10 @@
 {
-  "symbols": ["NIFTYBEES", "NEXT50IETF"],
-  "weekly_amounts": [2000, 1000],
-  "weekdays": [0, 1],
-  "monthly_budget": null,
-  "reserve_fraction": 0.2,
-  "dip_threshold": 0.05,
-  "deep_dip_threshold": 0.1,
-  "lookback_sessions": 60,
+  "paper_monthly_budget": 2000,
+  "paper_watchlist": ["RELIANCE", "TCS", "HDFCBANK"],
+  "paper_max_positions": 1,
+  "paper_monthly_loss_pause": 1000,
+  "paper_cumulative_loss_pause": 3000,
+  "trend_lookback_sessions": 200,
   "cost_bps": 10,
   "slippage_bps": 5
 }

@@ -5,12 +5,11 @@ milestones or discoveries so work can continue after closing and reopening the I
 
 ## Objective
 
-The project aims to increase net investment returns over the user's fixed ETF
-SIPs through validated rule-based investing. Connectivity and reporting are
-supporting capabilities. Prioritize a real-data, equal-contribution benchmark,
-cost and risk evaluation, and forward paper testing. Do not claim that a strategy
-is better without evidence or infer authorization to change SIPs or place trades.
-Candidate strategies and acceptance criteria are recorded in README.md.
+The project is a paper-only stock-strategy lab with a ₹2,000 monthly research
+budget; mutual funds are the user's core investment. Prioritize real completed
+data, fixed-contribution benchmarks, cost and risk evaluation, and forward paper
+testing. Do not claim that a strategy is better without evidence or infer
+authorization to place trades, change SIPs, or change mutual-fund investments.
 
 ## Account workflow
 
@@ -29,7 +28,7 @@ Authenticated holdings and today's order reads were verified on 7 September 2026
   Groww may require daily approval; request user action only when needed.
 - Account refresh is read-only. No order placement, subscription purchase, SIP
   changes, or background scheduler is authorized by a request to inspect data.
-- The current free plan excludes live quotes and historical candles. Today's
+- The current free plan previously excluded live quotes and historical candles. Today's
   orders do not replace a full historical report. Explain a missing input only
   after checking existing local files and available account data.
 - Preserve `data/`, `reports/`, the virtual environment, and credential files

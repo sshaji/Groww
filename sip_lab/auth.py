@@ -65,5 +65,18 @@ def authenticated_client(values=None):
         if not isinstance(token, str) or not token:
             raise ValueError('Missing credentials')
         return GrowwAPI(token)
-    except Exception:
-        raise ValueError('Groww authentication failed. Check saved credentials and daily approval on the API Keys page.') from None
+    except Exception as exc:
+        # SDK exception messages may include request details. Map only the class
+        # to an actionable, secret-free diagnosis.
+        kind = type(exc).__name__
+        if kind == 'GrowwAPIAuthorisationException':
+            message = 'Groww API key approval is required or has expired.'
+        elif kind == 'GrowwAPIAuthenticationException':
+            message = 'Groww rejected the saved API credentials.'
+        elif kind == 'GrowwAPIRateLimitException':
+            message = 'Groww API rate limit reached; retry later.'
+        elif kind == 'GrowwAPITimeoutException':
+            message = 'Groww API request timed out; retry later.'
+        else:
+            message = 'Groww authentication request failed.'
+        raise ValueError(message) from None

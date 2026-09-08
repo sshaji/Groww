@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "groww-sip-lab"
 version = "0.1.0"
-description = "Read-only Groww integration and cash-constrained ETF SIP experiments"
+description = "Read-only Groww integration and paper-only stock strategy research"
 requires-python = ">=3.9"
 dependencies = []
 

@@ -48,5 +48,5 @@ class GrowwReader:
             by_symbol[symbol] = rows
         dates = set(by_symbol[symbols[0]])
         if any(set(by_symbol[s]) != dates for s in symbols):
-            raise ValueError('ETF histories have different session dates; repair missing data before comparing')
+            raise ValueError('Histories have different session dates; repair missing data before comparing')
         return [dict(date=d, **{s: by_symbol[s][d] for s in symbols}) for d in sorted(dates)]
