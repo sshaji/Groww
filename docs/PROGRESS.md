@@ -1,6 +1,6 @@
 # Project checkpoint
 
-Updated: 8 September 2026.
+Updated: 19 September 2026.
 
 ## Current objective
 
@@ -55,8 +55,41 @@ Define a small, liquid beginner-friendly paper watchlist, then obtain enough
 completed price history before testing or suggesting any candidate rule. No
 background polling is set up.
 
+On 11 September 2026, the user asked about the Veegaland Developers IPO. The
+screen was set to 10 lots (1,070 shares; up to ₹149,800), which is inconsistent
+with the ₹2,000 monthly research budget. Research found improving FY24–FY26
+revenue and PAT, but a roughly 25.6x post-issue FY26 P/E, Kerala/project
+concentration, and negative FY26 operating cash flow. No order was authorized;
+the conservative view is to skip, or—if the user independently accepts IPO risk—
+limit exposure to one lot at cutoff rather than 10 lots.
+
 ## Next work
 
 Add risk metrics and split the three completed histories into independent periods.
 Only then forward-paper-test a candidate that survives. No background polling is
 set up.
+
+## Mutual-fund morning review — 19 September 2026
+
+The user requested ongoing dip/top-up research for four existing Direct Growth
+mutual funds, then chose to invoke a skill manually each morning. This is separate
+from the stock paper lab. No investment execution or SIP changes are authorized.
+The user explicitly asked that the plan and review history persist across sessions.
+
+- Installed personal skill: `/Users/Shaji/.codex/skills/daily-mf-topup-review/SKILL.md`.
+- Visible user guide: `MY-MF-PLAN.md` in the project root (Git-ignored because it
+  contains personal financial details). Keep this guide and the private watchlist
+  consistent when the user changes the agreed plan. It contains the morning
+  checklist and links to review history.
+- Private agreed budget, horizon, scheme IDs and screenshot provenance are in
+  `data/mf-watchlist.json`; read it at the start of a mutual-fund review.
+- AMFI's latest report was downloaded successfully to
+  `data/mf-nav-source-2026-09-19.txt`. The new eight-column format separates scheme,
+  plan and option. Each scheme's NAV date must be checked independently.
+- Initial report: `reports/mf-review-2026-09-19.md`. Full 52-week history and
+  portfolio allocation review remain outstanding; no current top-up signal has
+  been established. Thresholds in the skill are review heuristics, not buy rules.
+- Save each subsequent review under `reports/`; record purchases only when the
+  user confirms execution, never when a recommendation is merely made.
+- No scheduler is active. This session had no scheduling tool, and Computer Use
+  refused access to the ChatGPT app. The user subsequently chose manual invocation.
