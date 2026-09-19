@@ -93,3 +93,33 @@ The user explicitly asked that the plan and review history persist across sessio
   user confirms execution, never when a recommendation is merely made.
 - No scheduler is active. This session had no scheduling tool, and Computer Use
   refused access to the ChatGPT app. The user subsequently chose manual invocation.
+
+The first manual review is now saved in `reports/mf-review-2026-09-19.md`;
+the original setup is preserved in `reports/mf-setup-2026-09-19.md`. MFapi histories
+were matched by scheme code/ISIN and latest NAV against AMFI; PPFAS also matched
+its AMC page. Source snapshots and calculated metrics are cached under
+`data/mf-review-2026-09-19/`. Official NSE daily snapshots were retrieved for
+benchmark context. The report identifies a screening candidate but no purchase
+amount; complete allocation/cash information and further fund-context review
+remain outstanding. Initial observed levels are saved in the private watchlist
+to distinguish existing conditions from new crossings on subsequent runs.
+
+
+The user also requested attention to brief event-related dips. Morning MF reviews
+should inspect one-session and five-trading-session fund/benchmark moves and
+any rebound, without waiting for the longer-term drawdown thresholds. Verify
+news attribution; do not assume war-related declines recover within days or
+promise an observed NAV for a new purchase. Manual runs are not intraday monitoring.
+
+On 19 September 2026, the skill (`daily-mf-topup-review/SKILL.md`) was extended
+with a concrete, per-fund notability rule for these short-term moves instead of a
+flat percentage: score the latest 1-session/5-session move against that fund's
+own trailing ~60-session daily volatility, flag when |score| >= 1.5, and state a
+"short-term dip watch" line at the top of every report even when nothing is
+flagged. `MY-MF-PLAN.md` was updated to match. Today's report
+(`reports/mf-review-2026-09-19.md`) was also updated with a worked example: a
+computed 1-session/5-session table for all four funds plus Nifty 50, and a news
+check on the broader January-to-date decline, which attributed it to oil
+prices/FII outflows/bond yields rather than a single war shock (secondary
+sources; not independently verified). No new top-up signal resulted from that
+check.
