@@ -1,6 +1,6 @@
 # Project checkpoint
 
-Updated: 19 September 2026.
+Updated: 25 September 2026.
 
 ## Current objective
 
@@ -287,3 +287,23 @@ check on the broader January-to-date decline, which attributed it to oil
 prices/FII outflows/bond yields rather than a single war shock (secondary
 sources; not independently verified). No new top-up signal resulted from that
 check.
+
+## MF review — 25 September 2026
+
+Second manual review saved as `reports/mf-review-2026-09-25.md`, with cached
+sources, the reusable calculation script (`compute.py`) and metrics under
+`data/mf-review-2026-09-25/`. Bandhan Small Cap Direct Growth was confirmed in AMFI
+and is now NAV-tracked as a watch-only candidate. The watchlist keeps prior
+observations in `review_observations_history`, so new crossings can be
+distinguished from existing conditions. Data notes: MFapi can lag AMFI by one day
+(Parag Parikh this run), so use AMFI's latest NAV with disclosure. Yahoo's Nifty
+series skipped a session, so prefer official NSE daily snapshots for benchmark
+session moves. No execution confirmed; no purchases, SIP changes or scheduler.
+
+Later on 25 September the user confirmed executing the first manual top-ups under
+this plan, sized from the short-term notable-fall scores. This establishes that the
+user's goal is to act on short-term falls, not only the 52-week tiers. The
+user-confirmed execution ledger now lives in `data/mf-watchlist.json` →
+`confirmed_topup_executions` (amounts are private; allotment NAV/units pending).
+Future reviews must count these orders against the monthly cap and the 3-month
+per-fund guardrail. A short-term-fall sizing rule was proposed but not yet agreed.
