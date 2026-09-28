@@ -333,3 +333,11 @@ SIP change recorded 28 Sep (user-confirmed): PPFAS 35k to 50k and a new Motilal 
 Nifty SIP stop confirmed by the user on 28 Sep. SIPs total ₹1.5L/month. The Tata Quality exit (split between Motilal and Nifty suggested) is not decided.
 
 28 Sep 2026: user re-included Bandhan Small Cap Direct Growth in manual dip reviews, with interest in larger staged investments at deep drawdowns. Watchlist and personal guide updated; existing review tiers retained, no higher budget or purchase authorized. Annotated screenshot is historical context, not evidence that troughs can be identified in advance.
+
+28 Sep 2026: user supplied Fidelity Roth IRA Positions screenshot and confirmed no current contributions, funded from their former US 401(k); worked in US until 2015. Private dated snapshot saved in data/fidelity-ira-snapshot-2026-09-28.json; position values reconcile to total. Account number omitted. Include this separate retirement portfolio in future overall allocation context; no transaction or tax conclusion authorized/inferred.
+
+28 Sep 2026: user clarified the Fidelity IRA is intended as long-term savings with no planned withdrawals; expects Indian assets to cover needs. Age and personal planning details saved in the private IRA snapshot. Spending adequacy and risk tolerance have not been independently assessed; no allocation change requested.
+
+28 Sep 2026: user explicitly requested persistence of personal retirement-planning details. Saved DOB, income, expenses, retirement target, bank balances and user-reported US Social Security estimate in Git-ignored data/personal-financial-profile.json (private permissions). Read this alongside the Fidelity snapshot and MF watchlist for future planning. Social Security dollar basis, eligibility and earnings assumptions remain unverified; no retirement adequacy analysis performed.
+
+28 Sep 2026 standing user instruction: every SIP/dip-top-up recommendation must incorporate the full retirement and cross-border financial picture. Read data/personal-financial-profile.json and data/fidelity-ira-snapshot-2026-09-28.json alongside data/mf-watchlist.json. Required context and review constraints saved in watchlist whole_portfolio_advice_context and MY-MF-PLAN.md. Bank balances do not constitute deployable-cash authorization; retirement adequacy remains unassessed.
