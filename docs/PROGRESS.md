@@ -307,3 +307,14 @@ user-confirmed execution ledger now lives in `data/mf-watchlist.json` →
 `confirmed_topup_executions` (amounts are private; allotment NAV/units pending).
 Future reviews must count these orders against the monthly cap and the 3-month
 per-fund guardrail. A short-term-fall sizing rule was proposed but not yet agreed.
+
+## MF review — 28 September 2026 (intraday)
+
+The user asked to use today's intraday fall. The latest completed NAVs are for 25 Sep, so the
+review used NSE allIndices intraday moves (cached) to estimate implied scores. It
+proposed a split of the available cash between Nifty 50 and Mid Cap, noting the Mid Cap SIP was due the
+same day. The report is `reports/mf-review-2026-09-28.md`. The user then confirmed placing both top-ups, and they are recorded in the private ledger (allotment pending).
+
+Standing request (28 Sep 2026): tell the user if evidence shows dip top-ups beat fixed SIPs, or supports
+reducing SIPs. It is recorded in `MY-MF-PLAN.md` and the review skill. There is no evidence yet, and an
+equal-cash backtest on real AMFI NAV history has been offered but not run.
