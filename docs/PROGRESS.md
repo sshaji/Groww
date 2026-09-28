@@ -318,3 +318,16 @@ same day. The report is `reports/mf-review-2026-09-28.md`. The user then confirm
 Standing request (28 Sep 2026): tell the user if evidence shows dip top-ups beat fixed SIPs, or supports
 reducing SIPs. It is recorded in `MY-MF-PLAN.md` and the review skill. There is no evidence yet, and an
 equal-cash backtest on real AMFI NAV history has been offered but not run.
+
+28 Sep 2026: the user questioned why HDFC Nifty 50 is the largest SIP, given its weak 5-year return. Annualised
+returns from MFapi NAV history to 25 Sep were computed. The Nifty fund trails the three active funds over 1, 3,
+5 and 10 years. The dip rule's bias toward Nifty rests on cost and diversification, not proven returns. SIP mix and target
+allocation remain the user's decision; `target_allocation` is still unset. Offered to include this in the pending
+dip-vs-SIP backtest or an allocation review; no SIP change was made.
+Allocation review saved as `reports/mf-allocation-review-2026-09-28.md`. It covers look-through market-cap exposure, rolling returns and stress
+falls, and Motilal Large & Midcap as a possible Nifty replacement (not advised). It sets out two options for the SIP mix, pending a target allocation. It also flags
+the costs of Regular plans and Quant Hybrid's Adani concentration. No SIP change was made.
+User agreed (28 Sep) that HDFC Nifty 50 stays a dip top-up fund even if its SIP is redirected; the SIP change itself is still undecided.
+Motilal Large & Midcap Direct (AMFI 147704) added to dip review on 28 Sep. The user's proposed SIP split (Parag Parikh 50k, Motilal 25k, Nifty SIP stopped) is not executed yet.
+SIP change recorded 28 Sep (user-confirmed): PPFAS 35k to 50k and a new Motilal 25k SIP on the 20th. The Nifty SIP stop is awaiting confirmation. Details are in the private watchlist sip_change_log.
+Nifty SIP stop confirmed by the user on 28 Sep. SIPs total ₹1.5L/month. The Tata Quality exit (split between Motilal and Nifty suggested) is not decided.
