@@ -331,3 +331,5 @@ User agreed (28 Sep) that HDFC Nifty 50 stays a dip top-up fund even if its SIP 
 Motilal Large & Midcap Direct (AMFI 147704) added to dip review on 28 Sep. The user's proposed SIP split (Parag Parikh 50k, Motilal 25k, Nifty SIP stopped) is not executed yet.
 SIP change recorded 28 Sep (user-confirmed): PPFAS 35k to 50k and a new Motilal 25k SIP on the 20th. The Nifty SIP stop is awaiting confirmation. Details are in the private watchlist sip_change_log.
 Nifty SIP stop confirmed by the user on 28 Sep. SIPs total ₹1.5L/month. The Tata Quality exit (split between Motilal and Nifty suggested) is not decided.
+
+28 Sep 2026: user re-included Bandhan Small Cap Direct Growth in manual dip reviews, with interest in larger staged investments at deep drawdowns. Watchlist and personal guide updated; existing review tiers retained, no higher budget or purchase authorized. Annotated screenshot is historical context, not evidence that troughs can be identified in advance.
